@@ -1993,22 +1993,43 @@ input {
 }
 
 /* line 50, ../sass/teacher-profile.scss */
+.DnnModule {
+  margin: 0;
+}
+
+/* line 53, ../sass/teacher-profile.scss */
+#yas-dnncontent .yas-dnnrow .yas-marginlr {
+  padding: 0;
+}
+
+/* line 57, ../sass/teacher-profile.scss */
 body {
   padding: 0;
 }
 
-/* line 53, ../sass/teacher-profile.scss */
+/* line 71, ../sass/teacher-profile.scss */
+#ie7 .ya-teacher-profile .ya-left-column .ya-logo-watermark .ya-school-logo {
+  width: 200px;
+  margin-left: 50px;
+}
+/* line 78, ../sass/teacher-profile.scss */
+#ie7 .ya-teacher-profile .ya-left-column .ya-social-icons .fs1 {
+  margin: 0 5px 0 0;
+}
+/* line 86, ../sass/teacher-profile.scss */
+#ie7 .ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery .ya-thumbnail {
+  width: 44%;
+}
+
+/* line 93, ../sass/teacher-profile.scss */
 .ya-teacher-profile {
-  border-left: 30px solid #f4f0eb;
-  border-right: 30px solid #f4f0eb;
-  /*rgba(244, 240, 245, 1);*/
   padding: 10px;
 }
-/* line 58, ../sass/teacher-profile.scss */
+/* line 95, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-stars .icon {
   color: #FECC0A;
 }
-/* line 59, ../sass/teacher-profile.scss */
+/* line 96, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-content {
   background: #F4B327;
   /* Old browsers */
@@ -2018,14 +2039,16 @@ body {
   background: -webkit-linear-gradient(bottom, white 51%, #f4b323 86%, #f08e2d 99%);
   background: -ms-linear-gradient(bottom, white 51%, #f4b323 86%, #f08e2d 99%);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0.51, white), color-stop(0.86, #f4b323), color-stop(0.99, #f08e2d));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4B327', endColorstr='#ffffff',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#f4b323, EndColorStr=#ffffff);
   /* IE6-9 */
   /*background:url('../img/bg-blue-gradient.png') repeat-x;*/
-  -webkit-border-radius: 15px 15px 0 0;
   -moz-border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  -ms-border-radius: 15px 15px 0 0;
+  -o-border-radius: 15px 15px 0 0;
   border-radius: 15px 15px 0 0;
 }
-/* line 81, ../sass/teacher-profile.scss */
+/* line 117, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-breadcrumb {
   float: left;
   margin-left: 2.12766%;
@@ -2036,29 +2059,30 @@ body {
 .ya-teacher-profile .ya-breadcrumb:first-child {
   margin-left: 0;
 }
-/* line 83, ../sass/teacher-profile.scss */
+/* line 119, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-breadcrumb ul {
   background: none;
   border: 0 none;
   margin: 0;
   padding: 15px 40px 0 40px;
 }
-/* line 89, ../sass/teacher-profile.scss */
+/* line 125, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-breadcrumb ul li a, .ya-teacher-profile .ya-breadcrumb ul li .divider {
   text-shadow: 0 0 0;
   color: #ffffff;
 }
-/* line 91, ../sass/teacher-profile.scss */
+/* line 127, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-breadcrumb ul .active {
   text-shadow: 0 0 0;
   color: #ffffff;
 }
-/* line 95, ../sass/teacher-profile.scss */
+/* line 131, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column {
   min-width: 250px;
   min-height: 429px;
+  overflow: visible !important;
 }
-/* line 99, ../sass/teacher-profile.scss */
+/* line 136, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-logo-watermark {
   background: url("../img/bg-logo.png") no-repeat;
   position: absolute;
@@ -2067,20 +2091,22 @@ body {
   margin: 0 0 0 -30px;
   z-index: 50;
 }
-/* line 106, ../sass/teacher-profile.scss */
+/* line 143, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-logo-watermark .ya-school-logo {
   margin: 0;
   border: 18px solid #F27022;
   margin: 59px 0 0 59px;
   width: 230px;
   overflow: hidden;
-  -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
   border-radius: 100%;
   /*@media(max-width:767px){  width: 200px;  margin: 72px 0 0 75px;}*/
 }
 @media (max-width: 510px) {
-  /* line 99, ../sass/teacher-profile.scss */
+  /* line 136, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-left-column .ya-logo-watermark {
     background: url("../img/ya-pink-flower.png") no-repeat scroll 0 0/100% auto transparent;
     position: relative;
@@ -2093,28 +2119,31 @@ body {
     top: 0;
     width: auto;
   }
-  /* line 123, ../sass/teacher-profile.scss */
+  /* line 161, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-left-column .ya-logo-watermark .ya-school-logo {
     margin: 0;
     width: auto;
   }
 }
-/* line 127, ../sass/teacher-profile.scss */
+/* line 165, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-white-panel {
   background: white;
-  -webkit-border-radius: 0px 20px 20px 0;
   -moz-border-radius: 0px 20px 20px 0;
+  -webkit-border-radius: 0px 20px 20px 0;
+  -ms-border-radius: 0px 20px 20px 0;
+  -o-border-radius: 0px 20px 20px 0;
   border-radius: 0px 20px 20px 0;
   margin: 375px 0 0;
   -webkit-box-shadow: 3px 1px 3px rgba(199, 199, 224, 0.8);
   -moz-box-shadow: 3px 1px 3px rgba(199, 199, 224, 0.8);
   box-shadow: 3px 1px 3px rgba(199, 199, 224, 0.8);
+  position: relative;
 }
-/* line 131, ../sass/teacher-profile.scss */
+/* line 171, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-white-panel .ya-box {
   padding: 18px 15px;
 }
-/* line 133, ../sass/teacher-profile.scss */
+/* line 173, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-white-panel .ya-box .ya-title {
   color: #f37021;
   font-family: ProximaNova-Semibold;
@@ -2124,39 +2153,39 @@ body {
   line-height: normal;
   border-bottom: 1px solid #dcc298;
 }
-/* line 142, ../sass/teacher-profile.scss */
+/* line 182, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-white-panel .ya-box .ya-description {
   color: #5f6a72;
 }
-/* line 142, ../sass/teacher-profile.scss */
+/* line 182, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-white-panel .ya-box .ya-description p {
   margin: 0;
 }
-/* line 146, ../sass/teacher-profile.scss */
+/* line 186, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-white-panel .ya-yoga-taught ul, .ya-teacher-profile .ya-left-column .ya-white-panel .ya-languages ul {
   color: #5f6a72;
   margin: 0;
 }
-/* line 148, ../sass/teacher-profile.scss */
+/* line 188, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-white-panel .ya-yoga-taught ul li, .ya-teacher-profile .ya-left-column .ya-white-panel .ya-languages ul li {
   list-style-type: none;
   font-family: ProximaNova-SemiBold;
 }
-/* line 156, ../sass/teacher-profile.scss */
+/* line 196, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-white-panel .ya-contact-with-me .ya-social-icons .fs1 {
   font-size: 1.7em;
   color: #909090;
   display: inline;
 }
-/* line 162, ../sass/teacher-profile.scss */
+/* line 202, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-white-panel .ya-teacher-locations .ya-address {
   margin: 0 0 10px 0 !important;
 }
-/* line 165, ../sass/teacher-profile.scss */
+/* line 205, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-left-column .ya-white-panel .ya-link {
   color: #1e398d;
 }
-/* line 170, ../sass/teacher-profile.scss */
+/* line 210, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column {
   position: relative;
   z-index: 100;
@@ -2164,23 +2193,23 @@ body {
   font-family: ProximaNova-Regular;
   font-weight: normal;
 }
-/* line 175, ../sass/teacher-profile.scss */
+/* line 215, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column .ya-column-center {
   padding: 0 0;
 }
-/* line 177, ../sass/teacher-profile.scss */
+/* line 217, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column .ya-column-center .ya-address {
   color: #000;
 }
-/* line 183, ../sass/teacher-profile.scss */
+/* line 223, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column .ya-column-center .ya-column-center-box {
   padding: 0 15px;
 }
-/* line 186, ../sass/teacher-profile.scss */
+/* line 226, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column .ya-column-center .ya-about-container {
   margin: 0 0 60px 0;
 }
-/* line 190, ../sass/teacher-profile.scss */
+/* line 230, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column .ya-column-center .ya-about-container .ya-about-active {
   background: #f09324;
   /* Old browsers */
@@ -2193,52 +2222,54 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09324', endColorstr='#f8c45b',GradientType=0 );
   /* IE6-9 */
   border: 1px solid #F27022;
-  -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
   border-radius: 7px;
   margin: 0 0 15px;
 }
-/* line 212, ../sass/teacher-profile.scss */
+/* line 252, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column .ya-column-center .ya-about-container-active {
   margin: 0 0 50px;
 }
-/* line 216, ../sass/teacher-profile.scss */
+/* line 256, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column .ya-column-center .ya-teaching-experience .ya-badge {
   margin: 10px 0 0 0;
 }
-/* line 217, ../sass/teacher-profile.scss */
+/* line 257, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column .ya-column-center .ya-teaching-experience .ya-row {
   margin: 0 0 15px 0;
 }
-/* line 222, ../sass/teacher-profile.scss */
+/* line 262, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column a {
   font-family: ProximaNova-Semibold;
 }
-/* line 223, ../sass/teacher-profile.scss */
+/* line 263, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column a i {
   font-size: 25px;
   line-height: normal;
   margin: -5px 5px 0 0;
 }
-/* line 226, ../sass/teacher-profile.scss */
+/* line 266, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-middle-column .prev-exp {
   display: inline-block;
 }
-/* line 231, ../sass/teacher-profile.scss */
+/* line 271, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-right-column {
   padding: 0 0px 0;
 }
-/* line 232, ../sass/teacher-profile.scss */
+/* line 272, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-right-column .ya-right-box {
   margin: 0 15px 25px;
 }
-/* line 234, ../sass/teacher-profile.scss */
+/* line 274, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-right-column .ya-logo-box-container {
   /*border-left: 1px solid $grey2;  */
   border-bottom: 1px solid #DCC298;
   padding: 0 0 15px;
 }
-/* line 238, ../sass/teacher-profile.scss */
+/* line 278, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-right-column .ya-logo-box-container .ya-logo-box {
   background: #f09324;
   /* Old browsers */
@@ -2255,30 +2286,30 @@ body {
   text-align: center;
   width: 100%;
 }
-/* line 262, ../sass/teacher-profile.scss */
+/* line 302, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-right-column .ya-logo-box-container .ya-logo-box img {
   padding: 4px;
   height: 92px;
 }
-/* line 264, ../sass/teacher-profile.scss */
+/* line 304, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-right-column .ya-logo-box-container .ya-logo-box span {
   color: #ffffff;
   font-family: ProximaNova-Semibold;
   margin: 10px 0 0;
   display: block;
 }
-/* line 265, ../sass/teacher-profile.scss */
+/* line 305, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-right-column .ya-logo-box-container .ya-logo-box .ya-value {
   color: #f3efeb;
   font-size: 25px;
   font-family: ProximaNova-Semibold;
 }
-/* line 266, ../sass/teacher-profile.scss */
+/* line 306, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-right-column .ya-logo-box-container .ya-logo-box .ya-label {
   font-size: 16px;
   font-family: ProximaNova-Regular;
 }
-/* line 273, ../sass/teacher-profile.scss */
+/* line 313, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery {
   width: 100%;
   *zoom: 1;
@@ -2293,7 +2324,7 @@ body {
 .ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery:after {
   clear: both;
 }
-/* line 275, ../sass/teacher-profile.scss */
+/* line 315, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery .ya-thumbnail {
   float: left;
   margin-left: 0%;
@@ -2301,8 +2332,10 @@ body {
   *width: 48.88298%;
   padding: 5px;
   border: 1px solid #dcc298;
-  -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   margin: 1px;
 }
@@ -2310,16 +2343,16 @@ body {
 .ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery .ya-thumbnail:first-child {
   margin-left: 0;
 }
-/* line 277, ../sass/teacher-profile.scss */
+/* line 317, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-button-row {
   text-align: center;
   margin: 10px 0 0 0;
 }
-/* line 280, ../sass/teacher-profile.scss */
+/* line 320, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-page-title, .ya-teacher-profile .ya-middle-column .ya-column-center p {
   color: white;
 }
-/* line 283, ../sass/teacher-profile.scss */
+/* line 323, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-page-title-medium {
   color: #5f6a72;
   font-family: ProximaNova-SemiBold;
@@ -2329,7 +2362,7 @@ body {
   line-height: normal;
   padding: 0 0 5px;
 }
-/* line 291, ../sass/teacher-profile.scss */
+/* line 331, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-orange-btn {
   background: #ff9814;
   font-family: ProximaNova-Regular;
@@ -2342,20 +2375,21 @@ body {
   box-shadow: 0 1px 2px rgba(119, 119, 224, 0.5);
   margin: 8px 0 10px;
 }
-/* line 292, ../sass/teacher-profile.scss */
+/* line 332, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-orange-btn .fs1 {
   float: left;
   padding: 0 10px 0 0;
+  font-size: 1.3em;
 }
-/* line 301, ../sass/teacher-profile.scss */
+/* line 341, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-bold {
   font-weight: bold;
 }
-/* line 302, ../sass/teacher-profile.scss */
+/* line 342, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-italic {
   font-style: italic;
 }
-/* line 304, ../sass/teacher-profile.scss */
+/* line 344, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-logo-box-tablet {
   background: #f09324;
   /* Old browsers */
@@ -2370,23 +2404,23 @@ body {
   padding: 15px 10px  15px 10px;
   display: none;
 }
-/* line 322, ../sass/teacher-profile.scss */
+/* line 362, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-logo-box-tablet .ya-value {
   color: #f3efeb;
   font-size: 25px;
   font-family: ProximaNova-Semibold;
 }
-/* line 323, ../sass/teacher-profile.scss */
+/* line 363, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-logo-box-tablet .ya-label {
   font-size: 16px;
   font-family: ProximaNova-Regular;
 }
-/* line 331, ../sass/teacher-profile.scss */
+/* line 371, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-logo-box-tablet img {
   display: block;
   margin: 0 0 10px 0;
 }
-/* line 332, ../sass/teacher-profile.scss */
+/* line 372, ../sass/teacher-profile.scss */
 .ya-teacher-profile .ya-logo-box-tablet span {
   display: block;
   font-family: ProximaNova-Semibold;
@@ -2394,23 +2428,23 @@ body {
 }
 
 /* end school profile*/
-/* line 339, ../sass/teacher-profile.scss */
+/* line 379, ../sass/teacher-profile.scss */
 a {
   color: #96171a;
 }
 
-/* line 340, ../sass/teacher-profile.scss */
+/* line 380, ../sass/teacher-profile.scss */
 a:hover, a:focus {
   color: #96171a;
 }
 
-/* line 344, ../sass/teacher-profile.scss */
+/* line 384, ../sass/teacher-profile.scss */
 .content-navigation {
   border-color: #3bbfdd;
   color: #23a9c7;
 }
 
-/* line 350, ../sass/teacher-profile.scss */
+/* line 390, ../sass/teacher-profile.scss */
 .border {
   padding: 8px;
   margin: 8px;
@@ -2421,48 +2455,48 @@ a:hover, a:focus {
 /* Large desktop */
 @media (min-width: 1200px) {
   /*body{background:red;}*/
-  /* line 362, ../sass/teacher-profile.scss */
+  /* line 402, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-left-column .ya-white-panel {
     margin: 375px 0 0 -40px;
     width: 291px;
   }
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  /* line 378, ../sass/teacher-profile.scss */
+  /* line 418, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-left-column .ya-white-panel {
     margin: 375px 0 0 -40px;
     width: 291px;
   }
-  /* line 382, ../sass/teacher-profile.scss */
+  /* line 422, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-middle-column {
     width: 65%;
   }
-  /* line 384, ../sass/teacher-profile.scss */
+  /* line 424, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-middle-column .ya-column-center {
     width: 100%;
   }
-  /* line 385, ../sass/teacher-profile.scss */
+  /* line 425, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-middle-column .ya-right-column {
     width: 100%;
   }
-  /* line 387, ../sass/teacher-profile.scss */
+  /* line 427, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-right-column {
     padding: 0;
   }
-  /* line 389, ../sass/teacher-profile.scss */
+  /* line 429, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-right-column .ya-right-box {
     margin: 0 15px 25px 0;
   }
-  /* line 390, ../sass/teacher-profile.scss */
+  /* line 430, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-right-column .ya-logo-box-container {
     display: none;
   }
-  /* line 395, ../sass/teacher-profile.scss */
+  /* line 435, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-logo-box-tablet {
     display: block;
     text-align: center;
   }
-  /* line 398, ../sass/teacher-profile.scss */
+  /* line 438, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-logo-box-tablet img {
     display: inline-block;
   }
@@ -2470,45 +2504,45 @@ a:hover, a:focus {
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
   /*body{background:green;}*/
-  /* line 410, ../sass/teacher-profile.scss */
+  /* line 450, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-left-column .ya-white-panel {
     margin: 375px 0 0 -40px;
     width: 291px;
   }
-  /* line 414, ../sass/teacher-profile.scss */
+  /* line 454, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-middle-column {
     width: 58%;
   }
-  /* line 416, ../sass/teacher-profile.scss */
+  /* line 456, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-middle-column .ya-column-center {
     width: 100%;
   }
-  /* line 417, ../sass/teacher-profile.scss */
+  /* line 457, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-middle-column .ya-column-center .ya-about-container {
     margin: 0 0 30px;
   }
-  /* line 419, ../sass/teacher-profile.scss */
+  /* line 459, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-middle-column .ya-right-column {
     width: 100%;
   }
-  /* line 421, ../sass/teacher-profile.scss */
+  /* line 461, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-right-column {
     padding: 0;
   }
-  /* line 423, ../sass/teacher-profile.scss */
+  /* line 463, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-right-column .ya-right-box {
     margin: 0 15px 25px 0;
   }
-  /* line 424, ../sass/teacher-profile.scss */
+  /* line 464, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-right-column .ya-logo-box-container {
     display: none;
   }
-  /* line 429, ../sass/teacher-profile.scss */
+  /* line 469, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-logo-box-tablet {
     display: block;
     text-align: center;
   }
-  /* line 432, ../sass/teacher-profile.scss */
+  /* line 472, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-logo-box-tablet img {
     display: inline-block;
   }
@@ -2516,36 +2550,36 @@ a:hover, a:focus {
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
   /*body{background:blue;}*/
-  /* line 444, ../sass/teacher-profile.scss */
+  /* line 486, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-left-column {
     min-height: 300px;
   }
-  /* line 445, ../sass/teacher-profile.scss */
+  /* line 487, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-left-column .ya-white-panel {
     display: none;
   }
-  /* line 450, ../sass/teacher-profile.scss */
+  /* line 492, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-middle-column {
     padding: 0;
   }
-  /* line 453, ../sass/teacher-profile.scss */
+  /* line 495, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-middle-column .ya-column-center .ya-about-container {
     margin: 0 0 30px;
   }
-  /* line 458, ../sass/teacher-profile.scss */
+  /* line 500, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-right-column {
     padding: 0;
   }
-  /* line 461, ../sass/teacher-profile.scss */
+  /* line 503, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-right-column .ya-logo-box-container {
     display: none;
   }
-  /* line 466, ../sass/teacher-profile.scss */
+  /* line 508, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-logo-box-tablet {
     display: block;
     text-align: center;
   }
-  /* line 467, ../sass/teacher-profile.scss */
+  /* line 509, ../sass/teacher-profile.scss */
   .ya-teacher-profile .ya-logo-box-tablet img {
     display: inline-block;
   }

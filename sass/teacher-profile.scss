@@ -47,34 +47,70 @@ $gridFluidGutterWidth: 2.12766%;
     margin-left: 0;
   }
 }
+.DnnModule{
+	margin:0;
+}
+#yas-dnncontent .yas-dnnrow .yas-marginlr{
+	padding:0;
+}
+
 body{padding:0;}
 
-.ya-teacher-profile
-{
-	border-left:30px solid #f4f0eb;
-	border-right:30px solid #f4f0eb; /*rgba(244, 240, 245, 1);*/
-	padding: 10px;
+@mixin border-radius($radius: 5px){
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
 	
+}
+#ie7 .ya-teacher-profile
+{
+	.ya-left-column{
+		.ya-logo-watermark{ 
+		.ya-school-logo{ 
+			width:200px;
+			margin-left:50px;
+		}
+
+		}
+		.ya-social-icons{
+			.fs1{margin:0 5px 0 0;}
+		}
+		
+	}
+	.ya-right-column{
+		.ya-photo-gallery{
+				
+			.ya-gallery{				
+				.ya-thumbnail{width:44%; }
+			}
+			
+		}
+	}
+}
+
+.ya-teacher-profile{
+	padding: 10px;
 	.ya-stars{ .icon{color: #FECC0A;}	}
 	.ya-content{
-	background: #F4B327; /* Old browsers */
-	background: linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
-	background: -o-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
-	background: -moz-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
-	background: -webkit-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
-	background: -ms-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
-
-	background: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.51, rgb(255,255,255)),
-		color-stop(0.86, rgb(244,179,35)),
-		color-stop(0.99, rgb(240,142,45))
-	);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F4B327', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-	/*background:url('../img/bg-blue-gradient.png') repeat-x;*/
+		background: #F4B327; /* Old browsers */
+		background: linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
+		background: -o-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
+		background: -moz-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
+		background: -webkit-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
+		background: -ms-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
 	
+		background: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.51, rgb(255,255,255)),
+			color-stop(0.86, rgb(244,179,35)),
+			color-stop(0.99, rgb(240,142,45))
+		);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#f4b323, EndColorStr=#ffffff); /* IE6-9 */
+	/*background:url('../img/bg-blue-gradient.png') repeat-x;*/
 	@include border-radius(15px 15px 0 0);
 
 	}
@@ -95,6 +131,7 @@ body{padding:0;}
 	.ya-left-column{
 	min-width:250px;
 	min-height: 429px;
+	overflow:visible !important;
 
 	.ya-logo-watermark{
 	background:url('../img/bg-logo.png') no-repeat; 
@@ -111,6 +148,7 @@ body{padding:0;}
 		    overflow: hidden;
 		    @include border-radius(100%);
 			/*@media(max-width:767px){  width: 200px;  margin: 72px 0 0 75px;}*/
+			
 		}
 		@media(max-width:510px){ background:url("../img/ya-pink-flower.png") no-repeat scroll 0 0 / 100% auto transparent;  position:relative; padding:40px;
 			background-size:100%;
@@ -125,9 +163,11 @@ body{padding:0;}
 		}
 	}
 	.ya-white-panel{
-		background:$white; @include border-radius(0px 20px 20px 0);margin: 375px 0 0;@include box-shadow(3px 1px 3px rgba(199, 199, 224, 0.8));
-
-
+		background:$white; 
+		@include border-radius(0px 20px 20px 0);
+		margin: 375px 0 0;
+		@include box-shadow(3px 1px 3px rgba(199, 199, 224, 0.8));
+		position:relative;
 		.ya-box{
 		   padding:18px 15px;
 		.ya-title{
@@ -289,7 +329,7 @@ body{padding:0;}
 	    padding: 0 0 5px;
   	}	
   	.ya-orange-btn{background:#ff9814;font:{family:ProximaNova-Regular;size:14px;}color:$white; @include text-shadow(0 0 0);border: 0 none; @include box-shadow(0 1px 2px rgba(119, 119, 224, 0.5)); margin: 8px 0 10px;
-  		.fs1{ float:left;padding: 0 10px 0 0;}
+  		.fs1{ float:left;padding: 0 10px 0 0; font-size:1.3em;}
   	}
   	.ya-grey-btn{
   		//@extend .ya-orange-btn;
@@ -440,7 +480,9 @@ $margin: 16px;
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
 	/*body{background:blue;}*/
+	
 	.ya-teacher-profile {
+	    
 		.ya-left-column {
 			.ya-white-panel{
 				display:none;
