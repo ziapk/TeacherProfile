@@ -69,5 +69,21 @@ $(document).ready(function () {
 
 
     $('.accordionContent').hide();
+	
+	
+	$('.prev-exp').click(function(){
+		$(this).prev().slideToggle();
+		if($(this).hasClass('active')){
+			$(this).removeClass('active')
+			$(this).html('Show Previous Experience<i class="icon-arrow-down"></i> ');
+		}
+		else{
+			$(this).addClass('active')
+			$(this).html('Hide Previous Experience<i class="icon-arrow-up"></i> ');
+		}
+		
+		return false;
+	});
+	
 
 });

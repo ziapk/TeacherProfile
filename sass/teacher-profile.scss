@@ -159,7 +159,8 @@ body{padding:0;}
 		}
 	}
 	.ya-teacher-locations{
-	.ya-address{ margin:0 0 10px 0 !important;}
+	.ya-address{ margin:0 0 10px 0 !important;
+	}
 	}	
 	.ya-link{color:$blue2;}
 
@@ -172,8 +173,12 @@ body{padding:0;}
   		}
 
 		.ya-column-center{
-			p{@extend .ya-page-title}
+			p{@extend .ya-page-title;}
+			.ya-address{
+				color: #000;
+			}
 			padding:0 0;
+			
 
 			.ya-column-center-box{
 			padding:0 15px;
@@ -218,7 +223,9 @@ body{padding:0;}
 		i{ font-size: 25px;
 		    line-height: normal;
 		    margin: -5px 5px 0 0;}}
-		
+		.prev-exp{
+			display:inline-block;
+		}
 
 	}
 	.ya-right-column{

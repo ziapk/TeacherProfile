@@ -5,6 +5,7 @@
  * <![endif]--> 
 */
 @media (max-width: 510px) {
+  /* line 11, ../sass/ie7.scss */
   .ya-teacher-profile .ya-left-column .ya-logo-watermark {
     background: url("../img/ya-pink-flower-IE.png") no-repeat scroll 0 0 transparent;
     position: relative;
@@ -16,17 +17,21 @@
     top: 0;
     width: auto;
   }
+  /* line 23, ../sass/ie7.scss */
   .ya-teacher-profile .ya-left-column .ya-logo-watermark .ya-school-logo {
     margin: 23px 0 15px 25px;
     width: 170px;
   }
 }
+/* line 26, ../sass/ie7.scss */
 .ya-teacher-profile .ya-left-column .ya-logo-watermark .ya-school-logo {
   width: 200px;
 }
+/* line 30, ../sass/ie7.scss */
 .ya-teacher-profile .ya-left-column .ya-social-icons .fs1 {
   margin: 0 5px 0 0;
 }
+/* line 38, ../sass/ie7.scss */
 .ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery .ya-thumbnail {
   width: 44%;
 }
