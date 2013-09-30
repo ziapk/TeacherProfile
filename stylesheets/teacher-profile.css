@@ -1,0 +1,2548 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+
+@import "compass/reset";*/
+@font-face {
+  font-family: 'ProximaNova-RegularIt';
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_0_0.eot");
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_0_0.eot?#iefix") format("embedded-opentype"), url("http://positivefutures.com/ya/web-font/27BA9B_0_0.woff") format("woff"), url("http://positivefutures.com/ya/web-font/27BA9B_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_1_0.eot");
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_1_0.eot?#iefix") format("embedded-opentype"), url("http://positivefutures.com/ya/web-font/27BA9B_1_0.woff") format("woff"), url("http://positivefutures.com/ya/web-font/27BA9B_1_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_2_0.eot");
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_2_0.eot?#iefix") format("embedded-opentype"), url("http://positivefutures.com/ya/web-font/27BA9B_2_0.woff") format("woff"), url("http://positivefutures.com/ya/web-font/27BA9B_2_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_3_0.eot");
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_3_0.eot?#iefix") format("embedded-opentype"), url("http://positivefutures.com/ya/web-font/27BA9B_3_0.woff") format("woff"), url("http://positivefutures.com/ya/web-font/27BA9B_3_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'YogaAlliance';
+  src: url("http://positivefutures.com/ya/icon-font/YogaAlliance.eot");
+  src: url("http://positivefutures.com/ya/icon-font/YogaAlliance.eot?#iefix") format("embedded-opentype"), url("http://positivefutures.com/ya/icon-font/YogaAlliance.woff") format("woff"), url("http://positivefutures.com/ya/icon-font/YogaAlliance.ttf") format("truetype"), url("http://positivefutures.com/ya/icon-font/YogaAlliance.svg#YogaAlliance") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+@font-face {
+	font-family: 'YogaAlliance';
+	src:url('http://cdn.yogaalliance.org/icon-font/YogaAlliance.eot');
+	src:url('http://cdn.yogaalliance.org/icon-font/YogaAlliance.eot?#iefix') format('embedded-opentype'),
+		url('http://cdn.yogaalliance.org/icon-font/YogaAlliance.woff') format('woff'),
+		url('http://cdn.yogaalliance.org/icon-font/YogaAlliance.ttf') format('truetype'),
+		url('http://cdn.yogaalliance.org/icon-font/YogaAlliance.svg#YogaAlliance') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}*/
+/* line 65, ../sass/_fonts.scss */
+[data-icon]:before {
+  font-family: 'YogaAlliance';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 76, ../sass/_fonts.scss */
+.icon-certificate, .icon-leaf, .icon-home, .icon-home-2, .icon-pencil, .icon-stack, .icon-coin, .icon-support, .icon-clock, .icon-envelop, .icon-mail-send, .icon-calendar, .icon-user, .icon-bubbles, .icon-busy, .icon-vcard, .icon-cog, .icon-cog-2, .icon-bars, .icon-stats, .icon-dashboard, .icon-briefcase, .icon-resize, .icon-enter, .icon-exit, .icon-arrow-up, .icon-arrow-right, .icon-arrow-down, .icon-arrow-left, .icon-checkbox, .icon-checkbox-unchecked, .icon-radio-checked, .icon-radio-unchecked, .icon-thumbs-up, .icon-star, .icon-star-2, .icon-star-3, .icon-plus, .icon-checkmark, .icon-warning, .icon-warning-2, .icon-question, .icon-question-2, .icon-plus-circle, .icon-plus-circle-2, .icon-minus-circle, .icon-minus-circle-2, .icon-info, .icon-info-2, .icon-cancel-circle, .icon-cancel-circle-2, .icon-checkmark-circle, .icon-checkmark-circle-2, .icon-file-pdf, .icon-newspaper, .icon-pencil-2, .icon-star-4, .icon-search, .icon-double-angle-left, .icon-double-angle-right, .icon-print, .icon-opennewwindow, .icon-filter, .icon-remove, .icon-disk, .icon-undo, .icon-redo, .icon-eye, .icon-eye-blocked, .icon-facebook, .icon-pinterest, .icon-twitter-old, .icon-folder-open, .icon-calendar-2, .icon-arrow-right-2, .icon-arrow-left-2, .icon-image, .icon-images, .icon-instagram, .icon-google-plus, .icon-scale-up, .icon-scale-down {
+  font-family: 'YogaAlliance';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 85, ../sass/_fonts.scss */
+.icon-certificate:hover, .icon-leaf:hover, .icon-home:hover, .icon-home-2:hover, .icon-pencil:hover, .icon-stack:hover, .icon-coin:hover, .icon-support:hover, .icon-clock:hover, .icon-envelop:hover, .icon-mail-send:hover, .icon-calendar:hover, .icon-user:hover, .icon-bubbles:hover, .icon-busy:hover, .icon-vcard:hover, .icon-cog:hover, .icon-cog-2:hover, .icon-bars:hover, .icon-stats:hover, .icon-dashboard:hover, .icon-briefcase:hover, .icon-resize:hover, .icon-enter:hover, .icon-exit:hover, .icon-arrow-up:hover, .icon-arrow-right:hover, .icon-arrow-down:hover, .icon-arrow-left:hover, .icon-checkbox:hover, .icon-checkbox-unchecked:hover, .icon-radio-checked:hover, .icon-radio-unchecked:hover, .icon-thumbs-up:hover, .icon-star:hover, .icon-star-2:hover, .icon-star-3:hover, .icon-plus:hover, .icon-checkmark:hover, .icon-warning:hover, .icon-warning-2:hover, .icon-question:hover, .icon-question-2:hover, .icon-plus-circle:hover, .icon-plus-circle-2:hover, .icon-minus-circle:hover, .icon-minus-circle-2:hover, .icon-info:hover, .icon-info-2:hover, .icon-cancel-circle:hover, .icon-cancel-circle-2:hover, .icon-checkmark-circle:hover, .icon-checkmark-circle-2:hover, .icon-file-pdf:hover, .icon-newspaper:hover, .icon-pencil-2:hover, .icon-star-4:hover, .icon-search:hover, .icon-double-angle-left:hover, .icon-double-angle-right:hover, .icon-print:hover, .icon-opennewwindow:hover, .icon-filter:hover, .icon-remove:hover, .icon-disk:hover, .icon-undo:hover, .icon-redo:hover, .icon-eye:hover, .icon-eye-blocked:hover, .icon-facebook:hover, .icon-pinterest:hover, .icon-twitter-old:hover, .icon-folder-open:hover, .icon-calendar-2:hover, .icon-arrow-right-2:hover, .icon-arrow-left-2:hover, .icon-image:hover, .icon-images:hover, .icon-instagram:hover, .icon-google-plus:hover, .icon-scale-up:hover, .icon-scale-down:hover {
+  text-decoration: none !important;
+}
+
+/* line 90, ../sass/_fonts.scss */
+.icon-certificate:before {
+  content: "\61";
+}
+
+/* line 93, ../sass/_fonts.scss */
+.icon-leaf:before {
+  content: "\62";
+}
+
+/* line 96, ../sass/_fonts.scss */
+.icon-home:before {
+  content: "\65";
+}
+
+/* line 99, ../sass/_fonts.scss */
+.icon-home-2:before {
+  content: "\66";
+}
+
+/* line 102, ../sass/_fonts.scss */
+.icon-pencil:before {
+  content: "\67";
+}
+
+/* line 105, ../sass/_fonts.scss */
+.icon-stack:before {
+  content: "\68";
+}
+
+/* line 108, ../sass/_fonts.scss */
+.icon-coin:before {
+  content: "\69";
+}
+
+/* line 111, ../sass/_fonts.scss */
+.icon-support:before {
+  content: "\6a";
+}
+
+/* line 114, ../sass/_fonts.scss */
+.icon-clock:before {
+  content: "\6b";
+}
+
+/* line 117, ../sass/_fonts.scss */
+.icon-envelop:before {
+  content: "\6c";
+}
+
+/* line 120, ../sass/_fonts.scss */
+.icon-mail-send:before {
+  content: "\6d";
+}
+
+/* line 123, ../sass/_fonts.scss */
+.icon-calendar:before {
+  content: "\6e";
+}
+
+/* line 126, ../sass/_fonts.scss */
+.icon-user:before {
+  content: "\6f";
+}
+
+/* line 129, ../sass/_fonts.scss */
+.icon-bubbles:before {
+  content: "\70";
+}
+
+/* line 132, ../sass/_fonts.scss */
+.icon-busy:before {
+  content: "\71";
+}
+
+/* line 135, ../sass/_fonts.scss */
+.icon-vcard:before {
+  content: "\73";
+}
+
+/* line 138, ../sass/_fonts.scss */
+.icon-cog:before {
+  content: "\74";
+}
+
+/* line 141, ../sass/_fonts.scss */
+.icon-cog-2:before {
+  content: "\75";
+}
+
+/* line 144, ../sass/_fonts.scss */
+.icon-bars:before {
+  content: "\76";
+}
+
+/* line 147, ../sass/_fonts.scss */
+.icon-stats:before {
+  content: "\77";
+}
+
+/* line 150, ../sass/_fonts.scss */
+.icon-dashboard:before {
+  content: "\78";
+}
+
+/* line 153, ../sass/_fonts.scss */
+.icon-briefcase:before {
+  content: "\79";
+}
+
+/* line 156, ../sass/_fonts.scss */
+.icon-resize:before {
+  content: "\7a";
+}
+
+/* line 159, ../sass/_fonts.scss */
+.icon-enter:before {
+  content: "\41";
+}
+
+/* line 162, ../sass/_fonts.scss */
+.icon-exit:before {
+  content: "\42";
+}
+
+/* line 165, ../sass/_fonts.scss */
+.icon-arrow-up:before {
+  content: "\43";
+}
+
+/* line 168, ../sass/_fonts.scss */
+.icon-arrow-right:before {
+  content: "\44";
+}
+
+/* line 171, ../sass/_fonts.scss */
+.icon-arrow-down:before {
+  content: "\45";
+}
+
+/* line 174, ../sass/_fonts.scss */
+.icon-arrow-left:before {
+  content: "\46";
+}
+
+/* line 177, ../sass/_fonts.scss */
+.icon-checkbox:before {
+  content: "\47";
+}
+
+/* line 180, ../sass/_fonts.scss */
+.icon-checkbox-unchecked:before {
+  content: "\48";
+}
+
+/* line 183, ../sass/_fonts.scss */
+.icon-radio-checked:before {
+  content: "\49";
+}
+
+/* line 186, ../sass/_fonts.scss */
+.icon-radio-unchecked:before {
+  content: "\4a";
+}
+
+/* line 189, ../sass/_fonts.scss */
+.icon-thumbs-up:before {
+  content: "\4b";
+}
+
+/* line 192, ../sass/_fonts.scss */
+.icon-star:before {
+  content: "\4c";
+}
+
+/* line 195, ../sass/_fonts.scss */
+.icon-star-2:before {
+  content: "\4d";
+}
+
+/* line 198, ../sass/_fonts.scss */
+.icon-star-3:before {
+  content: "\4e";
+}
+
+/* line 201, ../sass/_fonts.scss */
+.icon-plus:before {
+  content: "\4f";
+}
+
+/* line 205, ../sass/_fonts.scss */
+.icon-checkmark:before {
+  content: "\50";
+}
+
+/* line 208, ../sass/_fonts.scss */
+.icon-warning:before {
+  content: "\51";
+}
+
+/* line 211, ../sass/_fonts.scss */
+.icon-warning-2:before {
+  content: "\52";
+}
+
+/* line 214, ../sass/_fonts.scss */
+.icon-question:before {
+  content: "\53";
+}
+
+/* line 217, ../sass/_fonts.scss */
+.icon-question-2:before {
+  content: "\54";
+}
+
+/* line 220, ../sass/_fonts.scss */
+.icon-plus-circle:before {
+  content: "\55";
+}
+
+/* line 223, ../sass/_fonts.scss */
+.icon-plus-circle-2:before {
+  content: "\56";
+}
+
+/* line 226, ../sass/_fonts.scss */
+.icon-minus-circle:before {
+  content: "\57";
+}
+
+/* line 229, ../sass/_fonts.scss */
+.icon-minus-circle-2:before {
+  content: "\58";
+}
+
+/* line 232, ../sass/_fonts.scss */
+.icon-info:before {
+  content: "\59";
+}
+
+/* line 235, ../sass/_fonts.scss */
+.icon-info-2:before {
+  content: "\5a";
+}
+
+/* line 238, ../sass/_fonts.scss */
+.icon-cancel-circle:before {
+  content: "\31";
+}
+
+/* line 241, ../sass/_fonts.scss */
+.icon-cancel-circle-2:before {
+  content: "\32";
+}
+
+/* line 244, ../sass/_fonts.scss */
+.icon-checkmark-circle:before {
+  content: "\33";
+}
+
+/* line 247, ../sass/_fonts.scss */
+.icon-checkmark-circle-2:before {
+  content: "\34";
+}
+
+/* line 250, ../sass/_fonts.scss */
+.icon-file-pdf:before {
+  content: "\39";
+}
+
+/* line 253, ../sass/_fonts.scss */
+.icon-newspaper:before {
+  content: "\28";
+}
+
+/* line 256, ../sass/_fonts.scss */
+.icon-pencil-2:before {
+  content: "\29";
+}
+
+/* line 259, ../sass/_fonts.scss */
+.icon-star-4:before {
+  content: "\21";
+}
+
+/* line 262, ../sass/_fonts.scss */
+.icon-search:before {
+  content: "\60";
+}
+
+/* line 265, ../sass/_fonts.scss */
+.icon-double-angle-left:before {
+  content: "\63";
+}
+
+/* line 268, ../sass/_fonts.scss */
+.icon-double-angle-right:before {
+  content: "\64";
+}
+
+/* line 271, ../sass/_fonts.scss */
+.icon-print:before {
+  content: "\72";
+}
+
+/* line 274, ../sass/_fonts.scss */
+.icon-opennewwindow:before {
+  content: "\5b";
+}
+
+/* line 277, ../sass/_fonts.scss */
+.icon-filter:before {
+  content: "\5d";
+}
+
+/* line 280, ../sass/_fonts.scss */
+.icon-remove:before {
+  content: "\30";
+}
+
+/* line 283, ../sass/_fonts.scss */
+.icon-disk:before {
+  content: "\3c";
+}
+
+/* line 286, ../sass/_fonts.scss */
+.icon-undo:before {
+  content: "\3e";
+}
+
+/* line 289, ../sass/_fonts.scss */
+.icon-redo:before {
+  content: "\7b";
+}
+
+/* line 292, ../sass/_fonts.scss */
+.icon-eye:before {
+  content: "\35";
+}
+
+/* line 295, ../sass/_fonts.scss */
+.icon-eye-blocked:before {
+  content: "\36";
+}
+
+/* line 298, ../sass/_fonts.scss */
+.icon-facebook:before {
+  content: "\37";
+}
+
+/* line 301, ../sass/_fonts.scss */
+.icon-pinterest:before {
+  content: "\38";
+}
+
+/* line 304, ../sass/_fonts.scss */
+.icon-twitter-old:before {
+  content: "\7c";
+}
+
+/* line 307, ../sass/_fonts.scss */
+.icon-folder-open:before {
+  content: "\7d";
+}
+
+/* line 310, ../sass/_fonts.scss */
+.icon-calendar-2:before {
+  content: "\7e";
+}
+
+/* line 313, ../sass/_fonts.scss */
+.icon-arrow-right-2:before {
+  content: "\e001";
+}
+
+/* line 316, ../sass/_fonts.scss */
+.icon-arrow-left-2:before {
+  content: "\23";
+}
+
+/* line 319, ../sass/_fonts.scss */
+.icon-image:before {
+  content: "\24";
+}
+
+/* line 322, ../sass/_fonts.scss */
+.icon-images:before {
+  content: "\25";
+}
+
+/* line 325, ../sass/_fonts.scss */
+.icon-instagram:before {
+  content: "\5e";
+}
+
+/* line 328, ../sass/_fonts.scss */
+.icon-google-plus:before {
+  content: "\26";
+}
+
+/* line 331, ../sass/_fonts.scss */
+.icon-scale-up:before {
+  content: "\2a";
+}
+
+/* line 334, ../sass/_fonts.scss */
+.icon-scale-down:before {
+  content: "\e003";
+}
+
+/*!
+ * Bootstrap Responsive v2.3.2
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+@-ms-viewport {
+  width: device-width;
+}
+
+/* line 15, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 23, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+.visible-phone {
+  display: none !important;
+}
+
+/* line 24, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+.visible-tablet {
+  display: none !important;
+}
+
+/* line 27, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+.hidden-desktop {
+  display: none !important;
+}
+
+/* line 28, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+.visible-desktop {
+  display: inherit !important;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 33, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  .hidden-desktop {
+    display: inherit !important;
+  }
+
+  /* line 34, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  .visible-desktop {
+    display: none !important;
+  }
+
+  /* line 36, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  .visible-tablet {
+    display: inherit !important;
+  }
+
+  /* line 38, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 44, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  .hidden-desktop {
+    display: inherit !important;
+  }
+
+  /* line 45, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  .visible-desktop {
+    display: none !important;
+  }
+
+  /* line 47, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  .visible-phone {
+    display: inherit !important;
+  }
+
+  /* line 49, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  .hidden-phone {
+    display: none !important;
+  }
+}
+/* line 53, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+.visible-print {
+  display: none !important;
+}
+
+@media print {
+  /* line 57, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  .visible-print {
+    display: inherit !important;
+  }
+
+  /* line 58, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+  .hidden-print {
+    display: none !important;
+  }
+}
+/* line 62, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 15, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 67, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 72, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-utilities.scss */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+  /* line 567, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row {
+    margin-left: -30px;
+    *zoom: 1;
+  }
+  /* line 15, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row:before, .row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  /* line 22, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row:after {
+    clear: both;
+  }
+
+  /* line 572, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 30px;
+  }
+
+  /* line 582, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 1170px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span1 {
+    width: 70px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span2 {
+    width: 170px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span3 {
+    width: 270px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span4 {
+    width: 370px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span5 {
+    width: 470px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span6 {
+    width: 570px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span7 {
+    width: 670px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span8 {
+    width: 770px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span9 {
+    width: 870px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span10 {
+    width: 970px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span11 {
+    width: 1070px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span12 {
+    width: 1170px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset1 {
+    margin-left: 130px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset2 {
+    margin-left: 230px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset3 {
+    margin-left: 330px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset4 {
+    margin-left: 430px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset5 {
+    margin-left: 530px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset6 {
+    margin-left: 630px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset7 {
+    margin-left: 730px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset8 {
+    margin-left: 830px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset9 {
+    margin-left: 930px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset10 {
+    margin-left: 1030px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset11 {
+    margin-left: 1130px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset12 {
+    margin-left: 1230px;
+  }
+
+  /* line 614, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  /* line 15, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid:before, .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  /* line 22, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid:after {
+    clear: both;
+  }
+  /* line 617, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 2.5641%;
+    *margin-left: 2.51091%;
+  }
+  /* line 623, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  /* line 628, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.5641%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span1 {
+    width: 5.98291%;
+    *width: 5.92971%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span2 {
+    width: 14.52991%;
+    *width: 14.47672%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span3 {
+    width: 23.07692%;
+    *width: 23.02373%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span4 {
+    width: 31.62393%;
+    *width: 31.57074%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span5 {
+    width: 40.17094%;
+    *width: 40.11775%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span6 {
+    width: 48.71795%;
+    *width: 48.66476%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span7 {
+    width: 57.26496%;
+    *width: 57.21177%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span8 {
+    width: 65.81197%;
+    *width: 65.75877%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span9 {
+    width: 74.35897%;
+    *width: 74.30578%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span10 {
+    width: 82.90598%;
+    *width: 82.85279%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span11 {
+    width: 91.45299%;
+    *width: 91.3998%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94681%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset1 {
+    margin-left: 11.11111%;
+    *margin-left: 11.00473%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset1:first-child {
+    margin-left: 8.54701%;
+    *margin-left: 8.44063%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset2 {
+    margin-left: 19.65812%;
+    *margin-left: 19.55174%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset2:first-child {
+    margin-left: 17.09402%;
+    *margin-left: 16.98763%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset3 {
+    margin-left: 28.20513%;
+    *margin-left: 28.09875%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset3:first-child {
+    margin-left: 25.64103%;
+    *margin-left: 25.53464%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset4 {
+    margin-left: 36.75214%;
+    *margin-left: 36.64575%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset4:first-child {
+    margin-left: 34.18803%;
+    *margin-left: 34.08165%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset5 {
+    margin-left: 45.29915%;
+    *margin-left: 45.19276%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset5:first-child {
+    margin-left: 42.73504%;
+    *margin-left: 42.62866%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset6 {
+    margin-left: 53.84615%;
+    *margin-left: 53.73977%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset6:first-child {
+    margin-left: 51.28205%;
+    *margin-left: 51.17567%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset7 {
+    margin-left: 62.39316%;
+    *margin-left: 62.28678%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset7:first-child {
+    margin-left: 59.82906%;
+    *margin-left: 59.72268%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset8 {
+    margin-left: 70.94017%;
+    *margin-left: 70.83379%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset8:first-child {
+    margin-left: 68.37607%;
+    *margin-left: 68.26969%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset9 {
+    margin-left: 79.48718%;
+    *margin-left: 79.3808%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset9:first-child {
+    margin-left: 76.92308%;
+    *margin-left: 76.81669%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset10 {
+    margin-left: 88.03419%;
+    *margin-left: 87.92781%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset10:first-child {
+    margin-left: 85.47009%;
+    *margin-left: 85.3637%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset11 {
+    margin-left: 96.5812%;
+    *margin-left: 96.47481%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset11:first-child {
+    margin-left: 94.01709%;
+    *margin-left: 93.91071%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset12 {
+    margin-left: 105.12821%;
+    *margin-left: 105.02182%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset12:first-child {
+    margin-left: 102.5641%;
+    *margin-left: 102.45772%;
+  }
+
+  /* line 671, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input,
+  textarea,
+  .uneditable-input {
+    margin-left: 0;
+  }
+
+  /* line 676, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 30px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span1,
+  textarea.span1,
+  .uneditable-input.span1 {
+    width: 56px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span2,
+  textarea.span2,
+  .uneditable-input.span2 {
+    width: 156px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span3,
+  textarea.span3,
+  .uneditable-input.span3 {
+    width: 256px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span4,
+  textarea.span4,
+  .uneditable-input.span4 {
+    width: 356px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span5,
+  textarea.span5,
+  .uneditable-input.span5 {
+    width: 456px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span6,
+  textarea.span6,
+  .uneditable-input.span6 {
+    width: 556px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span7,
+  textarea.span7,
+  .uneditable-input.span7 {
+    width: 656px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span8,
+  textarea.span8,
+  .uneditable-input.span8 {
+    width: 756px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span9,
+  textarea.span9,
+  .uneditable-input.span9 {
+    width: 856px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span10,
+  textarea.span10,
+  .uneditable-input.span10 {
+    width: 956px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span11,
+  textarea.span11,
+  .uneditable-input.span11 {
+    width: 1056px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span12,
+  textarea.span12,
+  .uneditable-input.span12 {
+    width: 1156px;
+  }
+
+  /* line 18, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-1200px-min.scss */
+  .thumbnails {
+    margin-left: -30px;
+  }
+
+  /* line 21, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-1200px-min.scss */
+  .thumbnails > li {
+    margin-left: 30px;
+  }
+
+  /* line 24, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-1200px-min.scss */
+  .row-fluid .thumbnails {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 567, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row {
+    margin-left: -20px;
+    *zoom: 1;
+  }
+  /* line 15, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row:before, .row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  /* line 22, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row:after {
+    clear: both;
+  }
+
+  /* line 572, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+  }
+
+  /* line 582, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 724px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span1 {
+    width: 42px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span2 {
+    width: 104px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span3 {
+    width: 166px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span4 {
+    width: 228px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span5 {
+    width: 290px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span6 {
+    width: 352px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span7 {
+    width: 414px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span8 {
+    width: 476px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span9 {
+    width: 538px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span10 {
+    width: 600px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span11 {
+    width: 662px;
+  }
+
+  /* line 593, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .span12 {
+    width: 724px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset1 {
+    margin-left: 82px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset2 {
+    margin-left: 144px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset3 {
+    margin-left: 206px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset4 {
+    margin-left: 268px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset5 {
+    margin-left: 330px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset6 {
+    margin-left: 392px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset7 {
+    margin-left: 454px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset8 {
+    margin-left: 516px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset9 {
+    margin-left: 578px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset10 {
+    margin-left: 640px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset11 {
+    margin-left: 702px;
+  }
+
+  /* line 599, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .offset12 {
+    margin-left: 764px;
+  }
+
+  /* line 614, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  /* line 15, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid:before, .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  /* line 22, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid:after {
+    clear: both;
+  }
+  /* line 617, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 2.76243%;
+    *margin-left: 2.70924%;
+  }
+  /* line 623, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  /* line 628, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.76243%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span1 {
+    width: 5.8011%;
+    *width: 5.74791%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span2 {
+    width: 14.36464%;
+    *width: 14.31145%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span3 {
+    width: 22.92818%;
+    *width: 22.87499%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span4 {
+    width: 31.49171%;
+    *width: 31.43852%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span5 {
+    width: 40.05525%;
+    *width: 40.00206%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span6 {
+    width: 48.61878%;
+    *width: 48.56559%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span7 {
+    width: 57.18232%;
+    *width: 57.12913%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span8 {
+    width: 65.74586%;
+    *width: 65.69266%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span9 {
+    width: 74.30939%;
+    *width: 74.2562%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span10 {
+    width: 82.87293%;
+    *width: 82.81974%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span11 {
+    width: 91.43646%;
+    *width: 91.38327%;
+  }
+  /* line 640, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94681%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset1 {
+    margin-left: 11.32597%;
+    *margin-left: 11.21958%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset1:first-child {
+    margin-left: 8.56354%;
+    *margin-left: 8.45715%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset2 {
+    margin-left: 19.8895%;
+    *margin-left: 19.78312%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset2:first-child {
+    margin-left: 17.12707%;
+    *margin-left: 17.02069%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset3 {
+    margin-left: 28.45304%;
+    *margin-left: 28.34666%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset3:first-child {
+    margin-left: 25.69061%;
+    *margin-left: 25.58422%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset4 {
+    margin-left: 37.01657%;
+    *margin-left: 36.91019%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset4:first-child {
+    margin-left: 34.25414%;
+    *margin-left: 34.14776%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset5 {
+    margin-left: 45.58011%;
+    *margin-left: 45.47373%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset5:first-child {
+    margin-left: 42.81768%;
+    *margin-left: 42.7113%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset6 {
+    margin-left: 54.14365%;
+    *margin-left: 54.03726%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset6:first-child {
+    margin-left: 51.38122%;
+    *margin-left: 51.27483%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset7 {
+    margin-left: 62.70718%;
+    *margin-left: 62.6008%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset7:first-child {
+    margin-left: 59.94475%;
+    *margin-left: 59.83837%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset8 {
+    margin-left: 71.27072%;
+    *margin-left: 71.16434%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset8:first-child {
+    margin-left: 68.50829%;
+    *margin-left: 68.4019%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset9 {
+    margin-left: 79.83425%;
+    *margin-left: 79.72787%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset9:first-child {
+    margin-left: 77.07182%;
+    *margin-left: 76.96544%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset10 {
+    margin-left: 88.39779%;
+    *margin-left: 88.29141%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset10:first-child {
+    margin-left: 85.63536%;
+    *margin-left: 85.52898%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset11 {
+    margin-left: 96.96133%;
+    *margin-left: 96.85494%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset11:first-child {
+    margin-left: 94.1989%;
+    *margin-left: 94.09251%;
+  }
+  /* line 646, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset12 {
+    margin-left: 105.52486%;
+    *margin-left: 105.41848%;
+  }
+  /* line 647, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .row-fluid .offset12:first-child {
+    margin-left: 102.76243%;
+    *margin-left: 102.65605%;
+  }
+
+  /* line 671, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input,
+  textarea,
+  .uneditable-input {
+    margin-left: 0;
+  }
+
+  /* line 676, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 20px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span1,
+  textarea.span1,
+  .uneditable-input.span1 {
+    width: 28px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span2,
+  textarea.span2,
+  .uneditable-input.span2 {
+    width: 90px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span3,
+  textarea.span3,
+  .uneditable-input.span3 {
+    width: 152px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span4,
+  textarea.span4,
+  .uneditable-input.span4 {
+    width: 214px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span5,
+  textarea.span5,
+  .uneditable-input.span5 {
+    width: 276px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span6,
+  textarea.span6,
+  .uneditable-input.span6 {
+    width: 338px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span7,
+  textarea.span7,
+  .uneditable-input.span7 {
+    width: 400px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span8,
+  textarea.span8,
+  .uneditable-input.span8 {
+    width: 462px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span9,
+  textarea.span9,
+  .uneditable-input.span9 {
+    width: 524px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span10,
+  textarea.span10,
+  .uneditable-input.span10 {
+    width: 586px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span11,
+  textarea.span11,
+  .uneditable-input.span11 {
+    width: 648px;
+  }
+
+  /* line 688, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  input.span12,
+  textarea.span12,
+  .uneditable-input.span12 {
+    width: 710px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 9, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* line 16, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  /* line 21, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .container-fluid {
+    padding: 0;
+  }
+
+  /* line 29, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .dl-horizontal dt {
+    float: none;
+    clear: none;
+    width: auto;
+    text-align: left;
+  }
+  /* line 35, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .dl-horizontal dd {
+    margin-left: 0;
+  }
+
+  /* line 43, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .container {
+    width: auto;
+  }
+
+  /* line 47, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .row-fluid {
+    width: 100%;
+  }
+
+  /* line 52, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .row,
+  .thumbnails {
+    margin-left: 0;
+  }
+
+  /* line 55, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .thumbnails > li {
+    float: none;
+    margin-left: 0;
+  }
+
+  /* line 62, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  [class*="span"],
+  .uneditable-input[class*="span"],
+  .row-fluid [class*="span"] {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 70, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .span12,
+  .row-fluid .span12 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 74, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .row-fluid [class*="offset"]:first-child {
+    margin-left: 0;
+  }
+
+  /* line 87, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .input-large,
+  .input-xlarge,
+  .input-xxlarge,
+  input[class*="span"],
+  select[class*="span"],
+  textarea[class*="span"],
+  .uneditable-input {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 94, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .input-prepend input,
+  .input-append input,
+  .input-prepend input[class*="span"],
+  .input-append input[class*="span"] {
+    display: inline-block;
+    width: auto;
+  }
+
+  /* line 98, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 0;
+  }
+
+  /* line 103, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .modal {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    margin: 0;
+  }
+  /* line 110, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .modal.fade {
+    top: -100px;
+  }
+  /* line 111, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .modal.fade.in {
+    top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 124, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 129, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .page-header h1 small {
+    display: block;
+    line-height: 20px;
+  }
+
+  /* line 136, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  input[type="checkbox"],
+  input[type="radio"] {
+    border: 1px solid #ccc;
+  }
+
+  /* line 142, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .control-label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left;
+  }
+  /* line 149, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .controls {
+    margin-left: 0;
+  }
+  /* line 153, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .control-list {
+    padding-top: 0;
+  }
+  /* line 157, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .form-actions {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 166, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .media .pull-left,
+  .media .pull-right {
+    float: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* line 172, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .media-object {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  /* line 178, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .modal {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+  }
+
+  /* line 183, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .modal-header .close {
+    padding: 10px;
+    margin: -10px;
+  }
+
+  /* line 189, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
+  .carousel-caption {
+    position: static;
+  }
+}
+@media (max-width: 979px) {
+  /* line 13, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  body {
+    padding-top: 0;
+  }
+
+  /* line 18, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: static;
+  }
+
+  /* line 21, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar-fixed-top {
+    margin-bottom: 20px;
+  }
+
+  /* line 24, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar-fixed-bottom {
+    margin-top: 20px;
+  }
+
+  /* line 28, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar-fixed-top .navbar-inner,
+  .navbar-fixed-bottom .navbar-inner {
+    padding: 5px;
+  }
+
+  /* line 31, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar .container {
+    width: auto;
+    padding: 0;
+  }
+
+  /* line 36, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar .brand {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 0 0 -5px;
+  }
+
+  /* line 45, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse {
+    clear: both;
+  }
+
+  /* line 49, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav {
+    float: none;
+    margin: 0 0 10px;
+  }
+
+  /* line 53, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav > li {
+    float: none;
+  }
+
+  /* line 56, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav > li > a {
+    margin-bottom: 2px;
+  }
+
+  /* line 59, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav > .divider-vertical {
+    display: none;
+  }
+
+  /* line 62, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav .nav-header {
+    color: #777777;
+    text-shadow: none;
+  }
+
+  /* line 68, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav > li > a,
+  .nav-collapse .dropdown-menu a {
+    padding: 9px 15px;
+    font-weight: bold;
+    color: #777777;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  /* line 75, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .btn {
+    padding: 4px 10px 4px;
+    font-weight: normal;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  /* line 80, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .dropdown-menu li + li a {
+    margin-bottom: 2px;
+  }
+
+  /* line 86, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav > li > a:hover,
+  .nav-collapse .nav > li > a:focus,
+  .nav-collapse .dropdown-menu a:hover,
+  .nav-collapse .dropdown-menu a:focus {
+    background-color: #f2f2f2;
+  }
+
+  /* line 90, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar-inverse .nav-collapse .nav > li > a,
+  .navbar-inverse .nav-collapse .dropdown-menu a {
+    color: #999999;
+  }
+
+  /* line 96, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar-inverse .nav-collapse .nav > li > a:hover,
+  .navbar-inverse .nav-collapse .nav > li > a:focus,
+  .navbar-inverse .nav-collapse .dropdown-menu a:hover,
+  .navbar-inverse .nav-collapse .dropdown-menu a:focus {
+    background-color: #111111;
+  }
+
+  /* line 100, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse.in .btn-group {
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  /* line 105, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .dropdown-menu {
+    position: static;
+    top: auto;
+    left: auto;
+    float: none;
+    display: none;
+    max-width: none;
+    margin: 0 15px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 119, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .open > .dropdown-menu {
+    display: block;
+  }
+
+  /* line 124, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .dropdown-menu:before,
+  .nav-collapse .dropdown-menu:after {
+    display: none;
+  }
+
+  /* line 127, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .dropdown-menu .divider {
+    display: none;
+  }
+
+  /* line 132, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav > li > .dropdown-menu:before, .nav-collapse .nav > li > .dropdown-menu:after {
+    display: none;
+  }
+
+  /* line 138, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse .navbar-form,
+  .nav-collapse .navbar-search {
+    float: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* line 147, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar-inverse .nav-collapse .navbar-form,
+  .navbar-inverse .nav-collapse .navbar-search {
+    border-top-color: #111111;
+    border-bottom-color: #111111;
+  }
+
+  /* line 152, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar .nav-collapse .nav.pull-right {
+    float: none;
+    margin-left: 0;
+  }
+
+  /* line 158, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse,
+  .nav-collapse.collapse {
+    overflow: hidden;
+    height: 0;
+  }
+
+  /* line 163, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar .btn-navbar {
+    display: block;
+  }
+
+  /* line 169, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .navbar-static .navbar-inner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 980px) {
+  /* line 184, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+/* line 13, ../sass/teacher-profile.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+/* line 18, ../sass/teacher-profile.scss */
+input {
+  box-sizing: content-box;
+}
+
+/* line 50, ../sass/teacher-profile.scss */
+body {
+  padding: 0;
+}
+
+/* line 53, ../sass/teacher-profile.scss */
+.ya-teacher-profile {
+  border-left: 30px solid #f4f0eb;
+  border-right: 30px solid #f4f0eb;
+  /*rgba(244, 240, 245, 1);*/
+  padding: 10px;
+}
+/* line 58, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-stars .icon {
+  color: #FECC0A;
+}
+/* line 59, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-content {
+  background: #F4B327;
+  /* Old browsers */
+  background: linear-gradient(bottom, #ffffff 51%, #f4b323 86%, #f08e2d 99%);
+  background: -o-linear-gradient(bottom, white 51%, #f4b323 86%, #f08e2d 99%);
+  background: -moz-linear-gradient(bottom, white 51%, #f4b323 86%, #f08e2d 99%);
+  background: -webkit-linear-gradient(bottom, white 51%, #f4b323 86%, #f08e2d 99%);
+  background: -ms-linear-gradient(bottom, white 51%, #f4b323 86%, #f08e2d 99%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.51, white), color-stop(0.86, #f4b323), color-stop(0.99, #f08e2d));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F4B327', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+  /*background:url('../img/bg-blue-gradient.png') repeat-x;*/
+  -webkit-border-radius: 15px 15px 0 0;
+  -moz-border-radius: 15px 15px 0 0;
+  border-radius: 15px 15px 0 0;
+}
+/* line 81, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-breadcrumb {
+  float: left;
+  margin-left: 2.12766%;
+  width: 100.00002%;
+  *width: 99.94682%;
+}
+/* line 46, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-breadcrumb:first-child {
+  margin-left: 0;
+}
+/* line 83, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-breadcrumb ul {
+  background: none;
+  border: 0 none;
+  margin: 0;
+  padding: 15px 40px 0 40px;
+}
+/* line 89, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-breadcrumb ul li a, .ya-teacher-profile .ya-breadcrumb ul li .divider {
+  text-shadow: 0 0 0;
+  color: #ffffff;
+}
+/* line 91, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-breadcrumb ul .active {
+  text-shadow: 0 0 0;
+  color: #ffffff;
+}
+/* line 95, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column {
+  min-width: 250px;
+  min-height: 429px;
+}
+/* line 99, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-logo-watermark {
+  background: url("../img/bg-logo.png") no-repeat;
+  position: absolute;
+  width: 489px;
+  height: 446px;
+  margin: 0 0 0 -30px;
+  z-index: 50;
+}
+/* line 106, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-logo-watermark .ya-school-logo {
+  margin: 0;
+  border: 18px solid #F27022;
+  margin: 59px 0 0 59px;
+  width: 230px;
+  overflow: hidden;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  /*@media(max-width:767px){  width: 200px;  margin: 72px 0 0 75px;}*/
+}
+@media (max-width: 510px) {
+  /* line 99, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-left-column .ya-logo-watermark {
+    background: url("../img/ya-pink-flower.png") no-repeat scroll 0 0/100% auto transparent;
+    position: relative;
+    padding: 40px;
+    background-size: 100%;
+    height: auto;
+    left: 0;
+    margin: auto;
+    max-width: 270px;
+    top: 0;
+    width: auto;
+  }
+  /* line 123, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-left-column .ya-logo-watermark .ya-school-logo {
+    margin: 0;
+    width: auto;
+  }
+}
+/* line 127, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-white-panel {
+  background: white;
+  -webkit-border-radius: 0px 20px 20px 0;
+  -moz-border-radius: 0px 20px 20px 0;
+  border-radius: 0px 20px 20px 0;
+  margin: 375px 0 0;
+  -webkit-box-shadow: 3px 1px 3px rgba(199, 199, 224, 0.8);
+  -moz-box-shadow: 3px 1px 3px rgba(199, 199, 224, 0.8);
+  box-shadow: 3px 1px 3px rgba(199, 199, 224, 0.8);
+}
+/* line 131, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-white-panel .ya-box {
+  padding: 18px 15px;
+}
+/* line 133, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-white-panel .ya-box .ya-title {
+  color: #f37021;
+  font-family: ProximaNova-Semibold;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 0 0 5px;
+  line-height: normal;
+  border-bottom: 1px solid #dcc298;
+}
+/* line 142, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-white-panel .ya-box .ya-description {
+  color: #5f6a72;
+}
+/* line 142, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-white-panel .ya-box .ya-description p {
+  margin: 0;
+}
+/* line 146, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-white-panel .ya-yoga-taught ul, .ya-teacher-profile .ya-left-column .ya-white-panel .ya-languages ul {
+  color: #5f6a72;
+  margin: 0;
+}
+/* line 148, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-white-panel .ya-yoga-taught ul li, .ya-teacher-profile .ya-left-column .ya-white-panel .ya-languages ul li {
+  list-style-type: none;
+  font-family: ProximaNova-SemiBold;
+}
+/* line 156, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-white-panel .ya-contact-with-me .ya-social-icons .fs1 {
+  font-size: 1.7em;
+  color: #909090;
+  display: inline;
+}
+/* line 162, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-white-panel .ya-teacher-locations .ya-address {
+  margin: 0 0 10px 0 !important;
+}
+/* line 164, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-left-column .ya-white-panel .ya-link {
+  color: #1e398d;
+}
+/* line 169, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-middle-column {
+  position: relative;
+  z-index: 100;
+  padding: 40px 0 0;
+  font-family: ProximaNova-Regular;
+  font-weight: normal;
+}
+/* line 174, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-middle-column .ya-column-center {
+  padding: 0 0;
+}
+/* line 178, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-middle-column .ya-column-center .ya-column-center-box {
+  padding: 0 15px;
+}
+/* line 181, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-middle-column .ya-column-center .ya-about-container {
+  margin: 0 0 60px 0;
+}
+/* line 185, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-middle-column .ya-column-center .ya-about-container .ya-about-active {
+  background: #f09324;
+  /* Old browsers */
+  background: linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -o-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -moz-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -webkit-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -ms-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.26, #f8c45b), color-stop(0.5, #f4ac19), color-stop(0.82, #f09324));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09324', endColorstr='#f8c45b',GradientType=0 );
+  /* IE6-9 */
+  border: 1px solid #F27022;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  margin: 0 0 15px;
+}
+/* line 207, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-middle-column .ya-column-center .ya-about-container-active {
+  margin: 0 0 50px;
+}
+/* line 211, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-middle-column .ya-column-center .ya-teaching-experience .ya-badge {
+  margin: 10px 0 0 0;
+}
+/* line 212, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-middle-column .ya-column-center .ya-teaching-experience .ya-row {
+  margin: 0 0 15px 0;
+}
+/* line 217, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-middle-column a {
+  font-family: ProximaNova-Semibold;
+}
+/* line 218, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-middle-column a i {
+  font-size: 25px;
+  line-height: normal;
+  margin: -5px 5px 0 0;
+}
+/* line 224, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column {
+  padding: 0 0px 0;
+}
+/* line 225, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column .ya-right-box {
+  margin: 0 15px 25px;
+}
+/* line 227, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column .ya-logo-box-container {
+  /*border-left: 1px solid $grey2;  */
+  border-bottom: 1px solid #DCC298;
+  padding: 0 0 15px;
+}
+/* line 231, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column .ya-logo-box-container .ya-logo-box {
+  background: #f09324;
+  /* Old browsers */
+  background: linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -o-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -moz-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -webkit-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -ms-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.26, #f8c45b), color-stop(0.5, #f4ac19), color-stop(0.82, #f09324));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09324', endColorstr='#f8c45b',GradientType=0 );
+  /* IE6-9 */
+  /*min-height: 260px;*/
+  padding: 15px 5px;
+  text-align: center;
+  width: 100%;
+}
+/* line 255, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column .ya-logo-box-container .ya-logo-box img {
+  padding: 4px;
+  height: 92px;
+}
+/* line 257, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column .ya-logo-box-container .ya-logo-box span {
+  color: #ffffff;
+  font-family: ProximaNova-Semibold;
+  margin: 10px 0 0;
+  display: block;
+}
+/* line 258, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column .ya-logo-box-container .ya-logo-box .ya-value {
+  color: #f3efeb;
+  font-size: 25px;
+  font-family: ProximaNova-Semibold;
+}
+/* line 259, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column .ya-logo-box-container .ya-logo-box .ya-label {
+  font-size: 16px;
+  font-family: ProximaNova-Regular;
+}
+/* line 266, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+.ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery:before, .ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+.ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery:after {
+  clear: both;
+}
+/* line 268, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery .ya-thumbnail {
+  float: left;
+  margin-left: 0%;
+  width: 48.93618%;
+  *width: 48.88298%;
+  padding: 5px;
+  border: 1px solid #dcc298;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 1px;
+}
+/* line 46, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery .ya-thumbnail:first-child {
+  margin-left: 0;
+}
+/* line 270, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-button-row {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+/* line 273, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-page-title, .ya-teacher-profile .ya-middle-column .ya-column-center p {
+  color: white;
+}
+/* line 276, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-page-title-medium {
+  color: #5f6a72;
+  font-family: ProximaNova-SemiBold;
+  font-weight: normal;
+  font-size: 20px;
+  border-bottom: 1px solid #dcc298;
+  line-height: normal;
+  padding: 0 0 5px;
+}
+/* line 284, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-orange-btn {
+  background: #ff9814;
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
+  color: white;
+  text-shadow: 0 0 0;
+  border: 0 none;
+  -webkit-box-shadow: 0 1px 2px rgba(119, 119, 224, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(119, 119, 224, 0.5);
+  box-shadow: 0 1px 2px rgba(119, 119, 224, 0.5);
+  margin: 8px 0 10px;
+}
+/* line 285, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-orange-btn .fs1 {
+  float: left;
+  padding: 0 10px 0 0;
+}
+/* line 294, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-bold {
+  font-weight: bold;
+}
+/* line 295, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-italic {
+  font-style: italic;
+}
+/* line 297, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-logo-box-tablet {
+  background: #f09324;
+  /* Old browsers */
+  background: linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -o-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -moz-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -webkit-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -ms-linear-gradient(bottom, #f8c45b 26%, #f4ac19 50%, #f09324 82%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.26, #f8c45b), color-stop(0.5, #f4ac19), color-stop(0.82, #f09324));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09324', endColorstr='#f8c45b',GradientType=0 );
+  /* IE6-9 */
+  padding: 15px 10px  15px 10px;
+  display: none;
+}
+/* line 315, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-logo-box-tablet .ya-value {
+  color: #f3efeb;
+  font-size: 25px;
+  font-family: ProximaNova-Semibold;
+}
+/* line 316, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-logo-box-tablet .ya-label {
+  font-size: 16px;
+  font-family: ProximaNova-Regular;
+}
+/* line 324, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-logo-box-tablet img {
+  display: block;
+  margin: 0 0 10px 0;
+}
+/* line 325, ../sass/teacher-profile.scss */
+.ya-teacher-profile .ya-logo-box-tablet span {
+  display: block;
+  font-family: ProximaNova-Semibold;
+  color: #ffffff;
+}
+
+/* end school profile*/
+/* line 332, ../sass/teacher-profile.scss */
+a {
+  color: #96171a;
+}
+
+/* line 333, ../sass/teacher-profile.scss */
+a:hover, a:focus {
+  color: #96171a;
+}
+
+/* line 337, ../sass/teacher-profile.scss */
+.content-navigation {
+  border-color: #3bbfdd;
+  color: #23a9c7;
+}
+
+/* line 343, ../sass/teacher-profile.scss */
+.border {
+  padding: 8px;
+  margin: 8px;
+  border-color: #3bbfdd;
+}
+
+/*******media queries******/
+/* Large desktop */
+@media (min-width: 1200px) {
+  /*body{background:red;}*/
+  /* line 355, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-left-column .ya-white-panel {
+    margin: 375px 0 0 -40px;
+    width: 291px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 371, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-left-column .ya-white-panel {
+    margin: 375px 0 0 -40px;
+    width: 291px;
+  }
+  /* line 375, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-middle-column {
+    width: 65%;
+  }
+  /* line 377, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-middle-column .ya-column-center {
+    width: 100%;
+  }
+  /* line 378, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-middle-column .ya-right-column {
+    width: 100%;
+  }
+  /* line 380, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-right-column {
+    padding: 0;
+  }
+  /* line 382, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-right-column .ya-right-box {
+    margin: 0 15px 25px 0;
+  }
+  /* line 383, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-right-column .ya-logo-box-container {
+    display: none;
+  }
+  /* line 388, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-logo-box-tablet {
+    display: block;
+    text-align: center;
+  }
+  /* line 391, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-logo-box-tablet img {
+    display: inline-block;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  /*body{background:green;}*/
+  /* line 403, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-left-column .ya-white-panel {
+    margin: 375px 0 0 -40px;
+    width: 291px;
+  }
+  /* line 407, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-middle-column {
+    width: 58%;
+  }
+  /* line 409, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-middle-column .ya-column-center {
+    width: 100%;
+  }
+  /* line 410, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-middle-column .ya-column-center .ya-about-container {
+    margin: 0 0 30px;
+  }
+  /* line 412, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-middle-column .ya-right-column {
+    width: 100%;
+  }
+  /* line 414, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-right-column {
+    padding: 0;
+  }
+  /* line 416, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-right-column .ya-right-box {
+    margin: 0 15px 25px 0;
+  }
+  /* line 417, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-right-column .ya-logo-box-container {
+    display: none;
+  }
+  /* line 422, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-logo-box-tablet {
+    display: block;
+    text-align: center;
+  }
+  /* line 425, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-logo-box-tablet img {
+    display: inline-block;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /*body{background:blue;}*/
+  /* line 437, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-left-column {
+    min-height: 300px;
+  }
+  /* line 438, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-left-column .ya-white-panel {
+    display: none;
+  }
+  /* line 443, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-middle-column {
+    padding: 0;
+  }
+  /* line 446, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-middle-column .ya-column-center .ya-about-container {
+    margin: 0 0 30px;
+  }
+  /* line 451, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-right-column {
+    padding: 0;
+  }
+  /* line 454, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-right-column .ya-logo-box-container {
+    display: none;
+  }
+  /* line 459, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-logo-box-tablet {
+    display: block;
+    text-align: center;
+  }
+  /* line 460, ../sass/teacher-profile.scss */
+  .ya-teacher-profile .ya-logo-box-tablet img {
+    display: inline-block;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /*body{background:teal;}*/
+}

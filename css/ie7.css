@@ -1,0 +1,32 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if lte IE 7]>
+ *  <link href="/stylesheets/ie7.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> 
+*/
+@media (max-width: 510px) {
+  .ya-teacher-profile .ya-left-column .ya-logo-watermark {
+    background: url("../img/ya-pink-flower-IE.png") no-repeat scroll 0 0 transparent;
+    position: relative;
+    padding: 5px 5px 5px 0px;
+    height: auto;
+    left: -10px;
+    margin: auto;
+    max-width: 250px;
+    top: 0;
+    width: auto;
+  }
+  .ya-teacher-profile .ya-left-column .ya-logo-watermark .ya-school-logo {
+    margin: 23px 0 15px 25px;
+    width: 170px;
+  }
+}
+.ya-teacher-profile .ya-left-column .ya-logo-watermark .ya-school-logo {
+  width: 200px;
+}
+.ya-teacher-profile .ya-left-column .ya-social-icons .fs1 {
+  margin: 0 5px 0 0;
+}
+.ya-teacher-profile .ya-right-column .ya-photo-gallery .ya-gallery .ya-thumbnail {
+  width: 44%;
+}
