@@ -72,13 +72,15 @@ $(document).ready(function () {
 	
 	
 	$('.prev-exp').click(function(){
-		$(this).prev().slideToggle();
+		$('#prev-experience').slideToggle();
 		if($(this).hasClass('active')){
 			$(this).removeClass('active')
+			$('.prev-badge').fadeIn();
 			$(this).html('Show Previous Experience<i class="icon-arrow-down"></i> ');
 		}
 		else{
 			$(this).addClass('active')
+			$('.prev-badge').fadeOut();
 			$(this).html('Hide Previous Experience<i class="icon-arrow-up"></i> ');
 		}
 		

@@ -5,10 +5,7 @@
 
 @import "compass/reset";*/
 @import "compass/css3";
-@import "_fonts";
-
-
-@import "bootstrap-responsive";
+@import "bootstrap/mixins";
 
 *, *:before, *:after {
 -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -90,6 +87,13 @@ body{padding:0;}
 	}
 }
 
+#ie8, #ie7{
+	.ya-left-column{
+		.ya-white-panel{
+			padding-left:0;
+		}
+	}
+}
 .ya-teacher-profile{
 	padding: 10px;
 	.ya-stars{ .icon{color: #FECC0A;}	}
@@ -164,10 +168,12 @@ body{padding:0;}
 	}
 	.ya-white-panel{
 		background:$white; 
-		@include border-radius(0px 20px 20px 0);
 		margin: 375px 0 0;
-		@include box-shadow(3px 1px 3px rgba(199, 199, 224, 0.8));
 		position:relative;
+		padding-left: 30px;
+		
+		@include box-shadow(3px 1px 3px rgba(199, 199, 224, 0.8));
+		@include border-radius(0px 20px 20px 0);
 		.ya-box{
 		   padding:18px 15px;
 		.ya-title{
@@ -400,7 +406,9 @@ $margin: 16px;
 	.ya-teacher-profile{		
 		.ya-left-column{
 			.ya-white-panel{
-				margin: 375px 0 0 -40px; width: 291px;
+				margin: 375px 0 0 -40px; 
+				width: 291px;
+				*width: 261px;
 			}
 		}
 		.ya-middle-column{
