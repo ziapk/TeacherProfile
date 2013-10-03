@@ -114,7 +114,7 @@ body{padding:0;}
 			color-stop(0.99, rgb(240,142,45))
 		);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#f4b323, EndColorStr=#ffffff); /* IE6-9 */
-	/*background:url('../img/bg-blue-gradient.png') repeat-x;*/
+	/*background:url('../images/bg-blue-gradient.png') repeat-x;*/
 	@include border-radius(15px 15px 0 0);
 
 	}
@@ -138,7 +138,7 @@ body{padding:0;}
 	overflow:visible !important;
 
 	.ya-logo-watermark{
-	background:url('../img/bg-logo.png') no-repeat; 
+	background:url('../images/bg-logo.png') no-repeat; 
 	position:absolute; 
 	width:489px; 
 	height:446px;
@@ -154,7 +154,7 @@ body{padding:0;}
 			/*@media(max-width:767px){  width: 200px;  margin: 72px 0 0 75px;}*/
 			
 		}
-		@media(max-width:510px){ background:url("../img/ya-pink-flower.png") no-repeat scroll 0 0 / 100% auto transparent;  position:relative; padding:40px;
+		@media(max-width:510px){ background:url("../images/ya-pink-flower.png") no-repeat scroll 0 0 / 100% auto transparent;  position:relative; padding:40px;
 			background-size:100%;
 			 height: auto;
 		    left: 0;
